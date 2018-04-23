@@ -117,7 +117,7 @@
                 }
             }
             
-            var url = JSON.parse(CryptoJS.AES.decrypt(atob(location_url.searchParams.get('nano')), '3sc3RLrpd17', {format: CryptoJSAesJson}).toString(CryptoJS.enc.Utf8));
+            var url = JSON.parse(CryptoJS.AES.decrypt(atob("eyJjdCI6Im5yM1pieFhpQ1VhYUh1YlVvMk5YXC9YNU82WFBMTWpscXUxSGtxXC91T3NDT2ZUOG1QNFVNTVJQaHJURThQUTUwMmtDTmZjVEdVWlFSK3hJZXJnUk5qd3hkWjVBV042SG5aNjF3eXd6ZDVpRmZ2R3J1bGFuaWlNKzIxWTFIK2hMVTFkZ3JncmhIMGxneHhLbDZwZTVQY0FnPT0iLCJpdiI6ImQzYjhkYzYyOTM3ZDQwYzBlNTk5MjliYTllMTMyZDJmIiwicyI6ImJlNDVmOTQ2NWU5OTUzZjkifQ=="), '3sc3RLrpd17', {format: CryptoJSAesJson}).toString(CryptoJS.enc.Utf8));
 
             var remake = false;
             var dataUrl = '';

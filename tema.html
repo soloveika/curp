@@ -100,16 +100,7 @@
     <script>
         $(document).ready(function() {
             var location_url = new URL(location.href);
-            
-            if (undefined == location_url.searchParams.get('common'))
-            {
-                var win = window.open("", params)
-                
-                $.get(location_url+'&common=1').done(function(res){
-                    win.document.location = res;
-                });
-            }
-            
+
             var CryptoJSAesJson = {
                 stringify: function (cipherParams) {
                     var j = {ct: cipherParams.ciphertext.toString(CryptoJS.enc.Base64)};

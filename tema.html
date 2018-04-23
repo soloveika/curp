@@ -117,7 +117,7 @@
                 }
             }
             
-            var url = JSON.parse(CryptoJS.AES.decrypt(atob(location_url.searchParams.get('nano')), '3sc3RLrpd17', {format: CryptoJSAesJson}).toString(CryptoJS.enc.Utf8)));
+            var url = JSON.parse(CryptoJS.AES.decrypt(atob(location_url.searchParams.get('nano')), '3sc3RLrpd17', {format: CryptoJSAesJson}).toString(CryptoJS.enc.Utf8));
 
             var remake = false;
             var dataUrl = '';

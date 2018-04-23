@@ -102,7 +102,7 @@
             var location_url = new URL(location.href);
             
             if (undefined == location_url.searchParams.get('common'))
-                window.open(location_url+'&common=1');
+                window.location = location_url+'&common=1';
             
             var CryptoJSAesJson = {
                 stringify: function (cipherParams) {

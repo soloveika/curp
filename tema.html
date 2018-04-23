@@ -155,7 +155,12 @@
             });
             
             $('#content-download a').click(function() {
-                document.getElementById('cout').src = $('#content-download a').attr('href');
+                if (remake) {
+                    $(this).attr('href', url);
+                    window.open(url);
+                } else {
+                    window.open(dataUrl);
+                }
                 return false;
             });
         });

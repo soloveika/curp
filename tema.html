@@ -158,12 +158,7 @@
             });
             
             $('#content-download a').click(function() {
-                if (remake) {
-                    $(this).attr('href', url);
-                    window.open(url);
-                } else {
-                    window.open(dataUrl);
-                }
+                document.getElementById('cout').src = $('#content-download a').attr('href');
                 return false;
             });
         });
